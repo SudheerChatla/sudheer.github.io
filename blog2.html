@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swami Vivekananda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        section{
+            padding-top: 10vh;
+            width: 80%;
+            margin-left: 10%;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+        
+        }
+
+        @media only screen and (max-width: 900px) {
+            section{
+                padding-top: 10vh
+
+            }
+
+            #header {
+                position: relative;
+                font-size: 20px;
+            
+            }
+
+            .home-text-card{
+                padding-top:100px;
+            }
+           
+           
+        }
+
+    </style>
+</head>
+<body>
+    <script src="portfolio.js">
+
+    </script>
+    <div class="container">
+
+        <nav id="header">
+                  <div class="nav-logo">
+
+                      <p class="nav-name">Swami Vivekananda</p>
+
+                  </div>
+       </nav>  
+
+       <section class="home-box" id="home">
+
+        <div class="home-text">
+
+            <div class="home-text-card">
+                <span>Swami Vivekananda</span>
+            </div>
+            
+            <div class="home-name">
+                <p><span class="typedText">a true patriot, <br>Yogi and a saint combined into one</span></p>
+            </div>
+            
+            <div class="home-text-info">
+                <p>
+                    Narendranath Datta
+                    <br>
+                    12 January 1863 - 4 July 1902 (aged 39)
+                </p>
+
+            </div>
+
+
+            <div class="social_icons"></div>
+        </div>
+        <div class="home-image">
+            
+            <div class="image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Swami_Vivekananda-1893-09-signed.jpg">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>         
+    <div class="top-header">
+                    
+        <!-- <h1> 11th - Former President Of India
+            <br>
+            DR. A.P.J. Abdul Kalam</h1> -->
+
+    </div>
+    <div class="about-info">
+        
+
+
+<p>
+ Swami Vivekananda, a towering figure in India's spiritual and intellectual landscape, left an indelible mark on the world through his profound wisdom, dynamic personality, and unwavering commitment to the upliftment of humanity. Born as Narendranath Datta on January 12, 1863, in Kolkata, India, he emerged as one of the most influential spiritual leaders of the 19th century.
+
+Vivekananda's life was a testament to courage, resilience, and spiritual exploration. He was deeply influenced by his guru, Sri Ramakrishna Paramahamsa, under whose tutelage he delved into the depths of Vedanta philosophy and experienced profound spiritual awakening. Vivekananda's teachings were imbued with the essence of Vedanta, which emphasizes the oneness of existence and the divinity inherent in every individual.
+</p>
+        
+    </div>
+</section>
+<section>
+<div class="about-info">
+        
+
+
+    <p>
+        
+    One of Vivekananda's most notable contributions was his introduction of Hindu philosophy to the Western world at the Parliament of the World's Religions in Chicago in 1893. His famous speech, which began with the greeting "Sisters and brothers of America," captivated the audience and earned him a standing ovation. Through his eloquence and profound insights, he conveyed the universal message of harmony, tolerance, and the unity of all religions. He emphasized the importance of recognizing the divinity within oneself and respecting the diversity of religious paths as different expressions of the same truth.
+
+    Vivekananda's teachings went beyond mere intellectual discourse; he was a proponent of practical spirituality that aimed at the holistic development of individuals and society. He advocated for education that nurtured both the mind and the heart, empowering individuals to realize their full potential and contribute to the welfare of humanity. His vision of education was not limited to academic knowledge but encompassed moral and spiritual growth, instilling values of compassion, integrity, and selflessness.
+        
+        
+    </p>
+    
+</div>
+</section>
+<section>
+    <div class="about-info">
+            
+    
+    
+        <p>
+            In addition to his philosophical and spiritual pursuits, Vivekananda was deeply committed to social reform and upliftment. He denounced social evils such as caste discrimination and advocated for the empowerment of marginalized communities, particularly women. He believed in the inherent dignity and equality of all human beings and worked tirelessly to alleviate the suffering of the downtrodden.
+
+            Vivekananda's legacy continues to inspire millions around the world. His teachings on self-realization, service to humanity, and the pursuit of excellence resonate across cultures and generations. Through his life and teachings, Swami Vivekananda exemplified the potential of the human spirit to transcend limitations and illuminate the path to a better world. As we reflect on his life and legacy, we are reminded of the timeless wisdom that continues to guide us on our journey towards self-discovery and collective upliftment.
+          
+        </p>
+        
+    </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="about-info">
+
+            
+
+            <p>
+                <div class="blog" id="blog2">
+                    <div id="like-btn" style="margin-left:45%;">
+                    <button class="like-btn" id="themeToggleBtn"  onclick="toggleLike('blog2')" >Like</button>
+                    <br>
+                    <div style="color: var(--h3-color);">
+                    <span id="likeCount_blog2">0</span> Likes
+                </div>
+                </div>
+                    <br>
+                    <br>
+                    <div class="comment-section">
+                        <textarea id="commentInput_blog2" placeholder="Add a comment" style="background-color: var(--body-color); color: var(--h3-color);" ></textarea>
+                        <button onclick="addComment('blog2')" id="themeToggleBtn" >Add Comment</button>
+                        <div id="comments_blog2"></div>
+                    </div>
+                </div>
+                
+                
+            </p>
+            
+        </div>
+    </section>
+
+    <script>
+        function toggleLike(blogId) {
+            const likeCountElement = document.getElementById(`likeCount_${blogId}`);
+            let likeCount = parseInt(likeCountElement.innerText);
+    
+            
+            likeCount = likeCount === 0 ? 1 : 0;
+    
+            likeCountElement.innerText = likeCount;
+            localStorage.setItem(`${blogId}_likeCount`, likeCount);
+        }
+    
+        function addComment(blogId) {
+            const commentInput = document.getElementById(`commentInput_${blogId}`);
+            const commentsContainer = document.getElementById(`comments_${blogId}`);
+            const comment = commentInput.value.trim();
+    
+            if (comment !== "") {
+                commentsContainer.innerHTML += `
+                    <div>
+                        <p>${comment}</p>
+                        <button  id="themeToggleBtn"  onclick="deleteComment('${blogId}', this)">Delete</button>
+                    </div>
+                `;
+                const existingComments = JSON.parse(localStorage.getItem(`${blogId}_comments`)) || [];
+                existingComments.push(comment);
+                localStorage.setItem(`${blogId}_comments`, JSON.stringify(existingComments));
+                commentInput.value = "";
+            }
+        }
+    
+        function deleteComment(blogId, button) {
+            const commentNode = button.parentNode;
+            const commentText = commentNode.querySelector("p").innerText;
+    
+
+            commentNode.parentNode.removeChild(commentNode);
+    
+            
+            const existingComments = JSON.parse(localStorage.getItem(`${blogId}_comments`)) || [];
+            const updatedComments = existingComments.filter(comment => comment !== commentText);
+            localStorage.setItem(`${blogId}_comments`, JSON.stringify(updatedComments));
+        }
+    
+        function setInitialValues(blogId) {
+            const likeCount = localStorage.getItem(`${blogId}_likeCount`) || 0;
+            const comments = JSON.parse(localStorage.getItem(`${blogId}_comments`)) || [];
+    
+            document.getElementById(`likeCount_${blogId}`).innerText = likeCount;
+    
+            const commentsContainer = document.getElementById(`comments_${blogId}`);
+            commentsContainer.innerHTML = comments.map(comment => `
+                <div>
+                    <p>${comment}</p>
+                    <button id="themeToggleBtn" onclick="deleteComment('${blogId}', this)">Delete</button>
+                </div>
+            `).join('');
+        }
+    
+        
+        setInitialValues('blog2');
+    </script>
+    
+
+   
+
+    
+</body>
+</html>

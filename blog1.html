@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APJ Abdul Kalam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        section{
+            padding-top: 10vh;
+            width: 80%;
+            margin-left: 10%;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+        
+        }
+
+        @media only screen and (max-width: 900px) {
+            section{
+                padding-top: 15vh
+
+            }
+
+            #header{
+                position: relative;
+            }
+            .home-text-card{
+                padding-top:25px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <script src="portfolio.js">
+
+    </script>
+    <div class="container">
+
+        <nav id="header">
+                  <div class="nav-logo">
+
+                      <p class="nav-name">Dr. APJ Abdul Kalam</p>
+
+                  </div>
+       </nav>  
+
+       <section class="home-box" id="home">
+
+        <div class="home-text">
+
+            <div class="home-text-card">
+                <span>Abdul Kalam</span>
+            </div>
+            
+            <div class="home-name">
+                <p><span class="typedText">also known as<br>Missile man of India</span></p>
+            </div>
+            
+            <div class="home-text-info">
+                <p>
+                    Former President Of India
+                    <br>
+                    Term of office 25th July 2002 - 25th July 2007
+                </p>
+
+            </div>
+
+
+            <div class="social_icons"> </div>
+        </div>
+        <div class="home-image">
+            
+            <div class="image">
+                <img src="https://presidentofindia.gov.in/abdulkalam/sites/default/files/2023-06/apj-banner.png">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>         
+    <div class="top-header">
+                    
+        <h1> 11th - Former President Of India
+            <br>
+            DR. A.P.J. Abdul Kalam</h1>
+
+    </div>
+    <div class="about-info">
+        
+
+
+        <p>
+            Born on 15th October 1931 at Rameswaram in Tamil Nadu, Dr. Avul Pakir Jainulabdeen Abdul Kalam, specialized in Aeronautical Engineering from Madras Institute of Technology. Dr. Kalam made significant contribution as Project Director to develop India's first indigenous Satellite Launch Vehicle (SLV-III) which successfully injected the Rohini satellite in the near earth orbit in July 1980 and made India an exclusive member of Space Club. He was responsible for the evolution of ISRO's launch vehicle programme, particularly the PSLV configuration. After working for two decades in ISRO and mastering launch vehicle technologies, Dr. Kalam took up the responsibility of developing Indigenous Guided Missiles at Defence Research and Development Organisation as the Chief Executive of Integrated Guided Missile Development Programme (IGMDP). He was responsible for the development and operationalisation of AGNI and PRITHVI Missiles and for building indigenous capability in critical technologies through networking of multiple institutions. He was the Scientific Adviser to Defence Minister and Secretary, Department of Defence Research & Development from July 1992 to December 1999. During this period he led to the weaponisation of strategic missile systems and the Pokhran-II nuclear tests in collaboration with Department of Atomic Energy, which made India a nuclear weapon State. He also gave thrust to self-reliance in defence systems by progressing multiple development tasks and mission projects such as Light Combat Aircraft.
+        </p>
+        
+    </div>
+</section>
+<section>
+<div class="about-info">
+        
+
+
+    <p>
+        As Chairman of Technology Information, Forecasting and Assessment Council (TIFAC) and as an eminent scientist, he led the country with the help of 500 experts to arrive at Technology Vision 2020 giving a road map for transforming India from the present developing status to a developed nation. Dr. Kalam has served as the Principal Scientific Advisor to the Government of India, in the rank of Cabinet Minister, from November 1999 to November 2001 and was responsible for evolving policies, strategies and missions for many development applications. Dr. Kalam was also the Chairman, Ex-officio, of the Scientific Advisory Committee to the Cabinet (SAC-C) and piloted India Millennium Mission 2020.
+
+        Dr. Kalam took up academic pursuit as Professor, Technology & Societal Transformation at Anna University, Chennai from November 2001 and was involved in teaching and research tasks. Above all he took up a mission to ignite the young minds for national development by meeting high school students across the country.
+        
+    </p>
+    
+</div>
+</section>
+<section>
+    <div class="about-info">
+            
+    
+    
+        <p>
+            In his literary pursuit four of Dr. Kalam's books - "Wings of Fire", "India 2020 - A Vision for the New Millennium", "My journey" and "Ignited Minds - Unleashing the power within India" have become household names in India and among the Indian nationals abroad. These books have been translated in many Indian languages.
+
+        Dr. Kalam is one of the most distinguished scientists of India with the unique honour of receiving honorary doctorates from 30 universities and institutions. He has been awarded the coveted civilian awards - Padma Bhushan (1981) and Padma Vibhushan (1990) and the highest civilian award Bharat Ratna (1997). He is a recipient of several other awards and Fellow of many professional institutions.
+
+        Dr. Kalam became the 11th President of India on 25th July 2002. His focus is on transforming India into a developed nation by 2020.
+            
+        </p>
+        
+    </div>
+    </section>
+    <br>
+    <br>
+
+    <section>
+        <div class="about-info">
+
+            
+
+            <p>
+                <button class="like-btn" id="themeToggleBtn" onclick="toggleLike('blog1')">Like</button>
+    <span id="likeCount_blog1">0</span> Likes
+    <div class="comment-section">
+        <textarea id="commentInput_blog1" placeholder="Add a comment" style="background-color: var(--body-color); color: var(--h3-color);"></textarea>
+        <button   id="themeToggleBtn"  onclick="addComment('blog1')">Add Comment</button>
+        <div id="comments_blog1"></div>
+    </div>
+                
+            </p>
+            
+        </div>
+    </section>
+
+    <script>
+        // Function to toggle likes
+        function toggleLike(blogId) {
+            const likeCountElement = document.getElementById(`likeCount_${blogId}`);
+            let likeCount = parseInt(likeCountElement.innerText);
+    
+            if (likeCount === 0) {
+                likeCount = 1;
+            } else {
+                likeCount = 0;
+            }
+    
+            likeCountElement.innerText = likeCount;
+    
+            // Store like count in local storage
+            localStorage.setItem(`${blogId}_likeCount`, likeCount);
+        }
+    
+        // Function to handle comments
+        function addComment(blogId) {
+            const commentInput = document.getElementById(`commentInput_${blogId}`);
+            const commentsContainer = document.getElementById(`comments_${blogId}`);
+            const comment = commentInput.value.trim();
+    
+            if (comment !== "") {
+                // Append comment to comments section with a delete button
+                commentsContainer.innerHTML += `
+                    <div>
+                        <p>${comment}</p>
+                        <button id="themeToggleBtn" onclick="deleteComment('${blogId}', this)">Delete</button>
+                    </div>
+                `;
+    
+                // Store comments in local storage
+                const existingComments = JSON.parse(localStorage.getItem(`${blogId}_comments`)) || [];
+                existingComments.push(comment);
+                localStorage.setItem(`${blogId}_comments`, JSON.stringify(existingComments));
+    
+                // Clear the comment input
+                commentInput.value = "";
+            }
+        }
+    
+        // Function to delete a comment
+        function deleteComment(blogId, button) {
+            const commentNode = button.parentNode;
+            const commentText = commentNode.querySelector("p").innerText;
+    
+            // Remove comment from the webpage
+            commentNode.parentNode.removeChild(commentNode);
+    
+            // Remove comment from local storage
+            const existingComments = JSON.parse(localStorage.getItem(`${blogId}_comments`)) || [];
+            const updatedComments = existingComments.filter(comment => comment !== commentText);
+            localStorage.setItem(`${blogId}_comments`, JSON.stringify(updatedComments));
+        }
+    
+        // Retrieve and set initial values from local storage
+        function setInitialValues() {
+            ['blog1'].forEach(blogId => {
+                const likeCount = localStorage.getItem(`${blogId}_likeCount`) || 0;
+                const comments = JSON.parse(localStorage.getItem(`${blogId}_comments`)) || [];
+    
+                document.getElementById(`likeCount_${blogId}`).innerText = likeCount;
+    
+                const commentsContainer = document.getElementById(`comments_${blogId}`);
+                commentsContainer.innerHTML = comments.map(comment => `
+                    <div>
+                        <p>${comment}</p>
+                        <button id="themeToggleBtn" onclick="deleteComment('${blogId}', this)">Delete</button>
+                    </div>
+                `).join('');
+            });
+        }
+        setInitialValues();
+    </script>
+
+   
+
+    
+</body>
+</html>
